@@ -1,0 +1,100 @@
+#roundedSquares {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.roundedSquares {
+    animation: panningHorizontally 1s infinite;
+    background: #BA54F5;
+    background: -webkit-linear-gradient(0deg, #BA54F5 0%, #E14ECA 100%);
+    background: -o-linear-gradient(0deg, #BA54F5 0%, #E14ECA 100%);
+    background: -moz-linear-gradient(0deg, #BA54F5 0%, #E14ECA 100%);
+    background: linear-gradient(0deg, #BA54F5 0%, #E14ECA 100%);
+    position: absolute;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.roundedSquares.roundedSquare1 {
+    animation: panningHorizontally 3.9s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    left: 3%;
+    top: -21%;
+}
+
+.roundedSquares.roundedSquare2 {
+    animation: panningHorizontally 3.6s infinite;
+    height: 400px;
+    width: 400px;
+    opacity: 0.4;
+    right: -5%;
+    top: -12%;
+}
+
+.roundedSquares.roundedSquare3 {
+    animation: panningHorizontally 3.3s infinite;
+    height: 200px;
+    width: 200px;
+    opacity: 0.1;
+    left: -5%;
+    bottom: 0%;
+}
+
+.roundedSquares.roundedSquare4 {
+    animation: panningHorizontally 3.1s infinite;
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
+    right: 27%;
+    top: 70%;
+    display: none;
+}
+
+.roundedSquares.roundedSquare5 {
+    animation: panningHorizontally 3s infinite;
+    height: 250px;
+    width: 250px;
+    opacity: 0.1;
+    left: 32%;
+    bottom: 29%;
+}
+
+.roundedSquares.roundedSquare6 {
+    animation: panningHorizontally 2.3s infinite;
+    left: 10%;
+    top: 35%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.7;
+    display: none;
+}
+
+.roundedSquares.roundedSquare7 {
+    animation: panningHorizontally 1.5s infinite;
+    width: 300px;
+    height: 300px;
+    right: -5%;
+    bottom: 0%;
+    opacity: 0.1;
+}
+
+@keyframes panningHorizontally {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
